@@ -1,0 +1,30 @@
+{
+    "name": "codenexus/laravel-grunt",
+    "description": "Asset workflow for Laravel 4 using Grunt",
+    "keywords": ["laravel 4", "assets"],
+    "homepage": "http://laravel-grunt.codenexus.org",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "Jeremy Schaffer",
+            "email": "jeremys@codenexus.org"
+        }
+    ],
+    "support": {
+        "email": "support@codenexus.org",
+        "issues": "https://github.com/codenexus/laravel-grunt/issues"
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Codenexus\\LaravelGrunt\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
