@@ -3,7 +3,7 @@
     "description": "Asset workflow for Laravel 4 using Grunt",
     "keywords": ["laravel 4", "assets"],
     "homepage": "http://laravel-grunt.codenexus.org",
-    "license": "AGPL-3.0",
+    "license": "MIT",
     "authors": [
         {
             "name": "Jeremy Schaffer",
