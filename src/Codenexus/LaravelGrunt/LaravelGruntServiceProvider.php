@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 use Codenexus\LaravelGrunt\Commands\GruntMakeCommand;
-use Codenexus\LaravelGrunt\Plugin;
+use Codenexus\LaravelGrunt\Package;
 
 class LaravelGruntServiceProvider extends ServiceProvider {
 
@@ -34,9 +34,9 @@ class LaravelGruntServiceProvider extends ServiceProvider {
 	{
 		$this->app['grunt.make'] = $this->app->share(function($app)
 		{
-			$plugin = new Plugin;
+			$package = new Package;
 
-			return new GruntMakeCommand($plugin, $app['config']);
+			return new GruntMakeCommand($package, $app['config']);
 		});
 	}
 
