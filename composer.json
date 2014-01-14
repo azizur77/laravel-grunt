@@ -18,10 +18,10 @@
         "php": ">=5.3.7",
         "illuminate/support": "4.1.*"
     },
+    "require-dev": {
+        "mockery": "dev-master"
+    },
     "autoload": {
-        "classmap": [
-            "src/migrations"
-        ],
         "psr-0": {
             "Codenexus\\LaravelGrunt\\": "src/"
         }
