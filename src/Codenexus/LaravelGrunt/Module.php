@@ -1,18 +1,18 @@
 <?php namespace Codenexus\LaravelGrunt;
 
-class Package {
+class Module {
 
 	/**
 	 * Install plugin if it doesn't exist
 	 *
-	 * @param string $packageName
+	 * @param string $moduleName
 	 * @return void
 	 */
-	public function mustBeAvailable($packageName)
+	public function mustBeAvailable($moduleName)
 	{
-		if (! $this->exists($packageName))
+		if (! $this->exists($moduleName))
 		{
-			$this->install($packageName);
+			$this->install($moduleName);
 		}
 	}
 
