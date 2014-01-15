@@ -3,12 +3,12 @@
 class PackageTest extends PHPUnit_Framework_TestCase {
 
 	protected function tearDown() {
-		\Mockery::close();
+		Mockery::close();
 	}
 
 	public function testCanInstallModuleIfNotExists()
 	{
-		$module = \Mockery::mock('Codenexus\LaravelGrunt\Module[exists, install]');
+		$module = Mockery::mock('Codenexus\LaravelGrunt\Module[exists, install]');
 
 		// Let's assume that the module is not installed on a user's system
 		$module->shouldReceive('exists')->once()->andReturn(false);
@@ -21,7 +21,7 @@ class PackageTest extends PHPUnit_Framework_TestCase {
 
 	public function testDoesNothingIfModuleExists()
 	{
-		$module = \Mockery::mock('Codenexus\LaravelGrunt\Module[exists, install]');
+		$module = Mockery::mock('Codenexus\LaravelGrunt\Module[exists, install]');
 
 		// Let's assume that the module is installed on a user's system
 		$module->shouldReceive('exists')->once()->andReturn(true);
