@@ -1,5 +1,16 @@
-[![Build Status](https://travis-ci.org/codenexus/laravel-grunt.png?branch=develop)](https://travis-ci.org/codenexus/laravel-grunt)
+> Please note that this project is a [Grunt](http://gruntjs.com/) version of [Jeffrey Way](http://jeffrey-way.com/)'s [Laravel-Guard](https://github.com/JeffreyWay/Laravel-Guard) package. 
 
+# Instant Compilation, Concatenation, and Minification in Laravel 4 (Alpha) [![Build Status](https://travis-ci.org/codenexus/laravel-grunt.png?branch=develop)](https://travis-ci.org/codenexus/laravel-grunt)
+
+[Prefer a video overview?](https://dl.dropbox.com/u/774859/GitHub-Repos/laravel-guard-intro.mp4)
+
+This plugin improves asset management in Laravel, by:
+
+- Compiling Sass or Less files automatically
+- Compiling CoffeeScript
+- Automatically running tests on save
+- Concatenating and minifying JavaScript and CSS (if not using a preprocessor)
+- Instant browser refreshing
 ## Installation
 
 > Before continuing, this package requires NPM. Please install this first.
